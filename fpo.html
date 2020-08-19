@@ -1,0 +1,290 @@
+<DOCTYP html5>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-align: center">FreelanceProgrammersOrganisation</h1>
+    <h2 id="description" class="description text-center">
+      Join Millions of workers in my blog through this registration form
+    </h2>
+  </header>
+   <form id="survey-form">
+    <div class="form-group">
+      <label for="fname">First name:</label>
+      <input type="text" label id="fname" name="fname"
+        class="form-control" placeholder="Enter your name" required></div><br>
+     <form id="survey-form">
+    <div class="form-group">
+      <label for="sname">Second name:</label>
+      <input type="text" label id="sname" name="sname"
+        class="form-control" placeholder="Enter your second name" required></div><br>
+       <form id="survey-form">
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="text" label id="email" name="email"
+        class="form-control" placeholder="email eg.samuel@gmail.com" required></div><br>
+         <form id="survey-form">
+    <div class="form-group">
+      <label for="age">Your age:</label>
+      <input type="number" name="age" min="18" max="50" class="form-control" placeholder="Your age eg. 18" ></div><br>
+           <p>Select the best option that discribes your current role below on a drop-down menu:</p>
+           <form action="/action_page.php">
+  <input list="specialization">
+  <datalist id="specialization">
+    <option value="Student">
+    <option value="Full-time job">
+    <option value="Part-time job">
+    <option value="Privacy(disclosed)">
+    <option value="Others">
+  </datalist>
+           </form>
+           <p>If others, please specify:</p>
+           <div class="form-group">
+      <label for="others">others:</label>
+      <input type="text" label id="others" name="others"
+        class="form-control" placeholder="Enter your specification"></div><br>
+           <p>How did you here about us?</p>
+           <input type="radio" id="friends" name="sites">
+  <label for="friends">Friends</label><br>
+  <input type="radio" id="social media" name="sites">
+  <label for="social media">Social media</label><br>  
+  <input type="radio" id="online website" name="sites">
+  <label for="online website">Online website</label><br>
+  <input type="radio" id="others" name="sites">
+  <label for="others">Others</label><br>  
+</form>
+           
+</form>
+   <p>Will you recommend FPO-Group to friends?</p>
+   <form action="/action_page.php" required>
+  <input list="answers">
+  <datalist id="answers">
+    <option value="Yes">
+    <option value="No">
+    <option value="Ain't sure">
+  </datalist>
+</form><br>
+           <p>Select the below features that best interests you on FreelenceProgrammersOrganisation.</p>
+       <label><input name="option1"
+          value="front-end-projects" type="checkbox"
+          class="input-checkbox"/>Back-end Programming</label><br>
+       
+           <label><input name="option2" 
+            value="data Visualization" type="checkbox"
+            class="input-checkbox"/>Back-end Programming</label><br>
+       
+       <label><input name="option3" 
+            value="code challenge" type="checkbox"
+            class="input-checkbox"/>Code challenge</label><br>
+       
+       <label><input name="option4" 
+            value="Open source community" type="checkbox"
+            class="input-checkbox"/>Open source community</label><br>
+       
+        <label><input name="option5" 
+            value="forums" type="checkbox"
+            class="input-checkbox"/>Forums</label><br>
+       
+       <label><input name="option6" 
+            value="Both front and back end programming" type="checkbox"
+            class="input-checkbox"/>Both front and back end programming</label>
+          <br><br>
+           <textarea placeholder="Enter your text here" required></textarea><br><br>
+
+  <form action="submit-form">
+    <button type="submit">Submit</button>  
+    </form>
+<style>
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 250;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #e4e4e4;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* form */
+
+form {
+  background: var(--color-darkblue-alpha);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 500px) {
+  form {
+    padding: 5.0rem;
+  }
+}
+
+.form-group {
+  margin: 1 auto 0.25rem auto;
+  padding: 0.25rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.245em 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 2.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-green);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
+</style>
+           
+           
+           
+     
+  
+
+
+
+
+
+
+
+
+
+
